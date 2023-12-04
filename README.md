@@ -19,23 +19,81 @@
 
 ### Objective
 
-Build a Credit Card Management system (web application) which can handle the entire lifecycle of a customer’s credit card. Functionality like adding and verifying credit card(s), fetching the credit card statement to generate a summary and extract insights and making payments for the card. The system should have a UI which gives the customers a clean interface to use.
+Objectives
+⦁	Enhance User Experience:
+⦁	Objective: Improve the overall user experience for managing credit cards.
+⦁	Key Results:
+⦁	Increase user satisfaction scores.
+⦁	Decrease in user-reported issues related to system usability.
+⦁	
+⦁	Increase Financial Literacy:
+⦁	Objective: Provide educational resources to enhance users' financial literacy.
+⦁	Key Results:
+⦁	Increase in user engagement with financial education materials.
+⦁	Positive feedback on educational tools.
+⦁	Improve Security Measures: 
+⦁	Objective: Strengthen the security features to protect user data and prevent fraud.
+⦁	Key Results:
+⦁	Zero major security breaches.
+⦁	Positive feedback on the perceived security of the system.
+⦁	Optimize Financial Planning: 
+⦁	Objective: Help users optimize their financial planning through spending insights and budgeting tools.
+⦁	Key Results:
+⦁	Increase in users utilizing budgeting features.
+⦁	Positive trend in users meeting their financial goals.
+⦁	Streamline Payment Processes:
+⦁	Objective: Simplify and streamline credit card payment processes.
+⦁	Key Results:
+⦁	Reduction in late payments.
+⦁	Increase in on-time payments.
+
+⦁	Maximize Rewards Program Participation:
+⦁	Objective: Encourage users to actively participate in the credit card rewards program.
+⦁	Key Results:
+⦁	Increase in the number of users redeeming rewards.
+⦁	Positive feedback on the rewards program.
+⦁	Ensure Regulatory Compliance:
+⦁	Objective: Adhere to all relevant financial regulations and industry standards.
+⦁	Key Results:
+⦁	Regular audits showing compliance.
+⦁	Zero instances of non-compliance reported.
+⦁	Provide Proactive Customer Support:
+⦁	Objective: Offer responsive and proactive customer support.
+⦁	Key Results:
+⦁	Decrease in average response time to user inquiries.
+⦁	Positive feedback on the effectiveness of customer support.
+⦁	Encourage Mobile App Adoption:
+⦁	Objective: Promote the adoption of the mobile app for convenient access.
+⦁	Key Results:
+⦁	Increase in the number of users accessing the system via the mobile app.
+⦁	Positive ratings and reviews for the mobile app.
+10.Continuous System Improvement:
+⦁	Objective: Continuously enhance and update the system based on user feedback and industry trends.
+⦁	Key Results:
+⦁	Regular release of updates and new features.
+⦁	Positive trend in user satisfaction over time.
+
 
 ---
 
 ### Introduction
 
-As an externship program we had provided a project to make a Credit Card Management System similar to CRED. We successfully build the web application as well as android application. 
+An efficient Credit Card Management System (CCMS) plays a pivotal role in the financial landscape, offering users a comprehensive platform to oversee and control their credit card activities. This system encompasses a range of tools and features designed to assist individuals in making informed financial decisions, avoiding debt pitfalls, and optimizing the benefits associated with credit card usage.
 
+At its core, a Credit Card Management System serves as a centralized hub for users to monitor, analyze, and regulate their credit card transactions. It facilitates responsible financial behavior by providing real-time insights into spending patterns, alerting users to potential issues, and offering tools to streamline the payment process. By leveraging technology and data analytics, this system empowers individuals to take charge of their financial well-being.
+
+In this digital era, Credit Card Management Systems often come equipped with user-friendly interfaces, mobile applications, and advanced security measures. They enable users to set spending limits, receive notifications for transactions, and gain a holistic view of their credit card activity. Additionally, these systems may offer educational resources on financial literacy, helping users make informed decisions about credit card usage and debt management.
+
+As the financial landscape continues to evolve, a well-designed Credit Card Management System becomes not just a convenience but a necessity. It aligns with the growing emphasis on financial literacy, providing users with the tools they need to navigate the complexities of credit cards and ensuring that these financial instruments contribute positively to their overall financial health. In this introduction, we'll delve deeper into the various components and benefits of an effective Credit Card Management System, exploring how it serves as a valuable ally in the journey toward financial stability and security
 ---
 
 ### Demo
 
 Below is a demo of final project.
 
-- [Demo Link](https://www.youtube.com/watch?v=3rGtfzDxl0A)
+- [Demo Link](https://www.youtube.com/embed/aOKPanscMuE)
+  Demo Link will be provide Sortly.
 
-- GIF  <br/> <br/> ![](./assets/demo.gif)
 
 ---
 
@@ -55,102 +113,28 @@ Below is a demo of final project.
 ---
 
 ### Built With
-
+   [HTML,CSS ,JAVASCRIPT] 
 - [ReactJS](https://reactjs.org/) - A JavaScript library for building user interfaces
-- [Redux](https://redux.js.org/) - A Predictable State Container for Javascript Apps
-- [React-Bootstrap](https://react-bootstrap.github.io/) - Wrapper for bootstrap in ReactJS
 - [NodeJS](https://nodejs.org/) - It is a JavaScript runtime built on Chrome's V8 JavaScript engine.
-
-
 - [ExpressJS](https://expressjs.com/) - It is designed for building web applications and APIs.
-- [MySQL](https://www.mysql.com/) - A relational database management system to store data.
-- [Sequelize](https://sequelize.org/) - It is a promise-based Node.js ORM for Postgres, MySQL, MariaDB, SQLite and Microsoft SQL Server.
+- [MOngodb] - A database management system to store data.
 
 ---
 
 ### How To Get Started
 
-1. Clone the repository
-
-2. ``` cd backend ``` and create a folder named ```config```. Inside that folder make a file named ``` config.json ```
-
-3. Content of ``` config.json ``` should be similar to this.
-> Note: We are using mysql as a dialect(for storing data). You can use any dialect like Postgress, MariaDB, SQLite and Microsoft SQL Server. But you have to change ```config.json``` accordingly.
-
-```json
-{
-    "development": {
-      "username": "<db_user>",
-      "password": "<password>",
-      "database": "cred_dev",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
-    },
-    "test": {
-      "username": "<db_user>",
-      "password": "<password>",
-      "database": "cred_test",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
-    },
-    "production": {
-      "username": "<db_user>",
-      "password": "<password>",
-      "database": "cred_prod",
-      "host": "127.0.0.1",
-      "dialect": "mysql"
-    }
-  }
-```
-4. In ``` backend ``` directory create a file named ``` .env ```
-
-5. Content of ``` .env ``` should be similar to this
-
-```
-PORT=5000
-SECRET=<YOUR_SECRET_KEY>
-ENCRYPTION_KEY=<YOUR_ENCRYPTION_KEY>
-TWILIO_ACCOUNT_SID=<TWILIO_ACCOUNT_SID>
-TWILIO_AUTH_TOKEN=<TWILIO_AUTH_TOKEN>
-TWILIO_PHONE_NO=<TWILIO_PHONE_NO>
-EMAIL=<AN_EMAIl_ID>
-EMAIL_PAS=<EMAIL_PASSWORD>
-```
-
-6. In ```backend``` directory run ``` npm install ```.
-
-7. ``` cd frontend ``` and create a file named ``` .env ```.
-
-8. Content of ``` .env ``` should be similar to this.
-```
-REACT_APP_BACKEND_URL_DEV=http://localhost:5000/
-REACT_APP_BACKEND_URL_PROD=<BACKEND_DEPLOYED_URL>
-```
-
-9. In ``` frontend ``` directory run ``` npm install ```
-
-10. ``` cd backend ``` and exectute following command
-```
-npm run dev - to run server and client concurrently
-npm run server - to run server standalone
-npm run client - to run client standalone.
-```
-
----
+It will be provide sortly
 
 ### Deployed Links
 
 - Web Application
-    - [Link](https://cred-t8.netlify.app/)
-- Android APK
-    - [Link](https://drive.google.com/file/d/1oxP7BQGEgGeFnLBS8aiM3V_DLA0UQnCK/view?usp=sharing)
-- Demo Account
-    - email: ```cadel21249@vreagles.com```
-    - password: ```Temp@123```
+   it will be provide sortly
 
 ---
 
 ### Developed By
 
- - [Abhishek Ranjan](https://www.github.com/arabhiar)
- - [Narendra Manglani](https://github.com/ishuu7)
+ -Mohd Rizwan
+ - Monis Raza
+ - Sarukh Ali
+ - Aayush Gupta
