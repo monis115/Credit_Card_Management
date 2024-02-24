@@ -108,10 +108,9 @@ const Addcard = () => {
         coin: "",
       });
 
-      alert("Payment details submitted successfully!");
+      alert(" submitted successfully!");
     } catch (error) {
-      console.error("Error:", error);
-      alert("An error occurred while submitting payment details.");
+      alert("Email Lready Exists  Or another Error");
     }
   };
 

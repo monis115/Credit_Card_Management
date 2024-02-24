@@ -65,81 +65,77 @@ const Wrapper = styled.section`
 const initialProducts = [
   {
     id: 1,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/i_nSCA8OBAxlCR8wqZJmx622VyE=/0x0:2040x1360/1400x1050/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/23935558/acastro_STK103__01.jpg", // Replace with your image URL
-    description: "Get 30% of on buy this product on amzazan    ",
-    product: "Iphone 12pro",
+    image: "https://m.media-amazon.com/images/I/81fxjeu8fdL._AC_UY218_.jpg",
+    description: "Get 20% off on buy this product on amzazan    ",
+    product: "Apple iPhone 15 Pro Max",
     coupen_staues: false,
     coupon_code: "xyz123",
-    coin: 100,
+    coin: 1000,
   },
   {
     id: 2,
-    image: "https://via.placeholder.com/150", // Replace with your image URL
-    description: "Product 1 Description",
+    image: "https://m.media-amazon.com/images/I/61T1-tI9jdL._AC_UY218_.jpg", // Replace with your image URL
+    description: "Get 10% off on buy on amazan",
 
-    product: "Iphone 12pro",
+    product: "boAt Immortal IM-700 7.1",
     coupen_staues: false,
     coupon_code: "xyz123",
     coin: 100,
   },
   {
     id: 3,
-    image: "https://via.placeholder.com/150", // Replace with your image URL
-    description: "Product 1 Description",
+    image: "https://m.media-amazon.com/images/I/61Zv+ufF51L._AC_UY218_.jpg", // Replace with your image URL
+    description: "Get 50% off on buy on Flipkart",
     coupen_staues: false,
-    product: "Iphone 12pro",
+    product: "Logitech B170 Wireless Mouse",
     coupon_code: "xyz123",
     coin: 200,
   },
   {
     id: 4,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/i_nSCA8OBAxlCR8wqZJmx622VyE=/0x0:2040x1360/1400x1050/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/23935558/acastro_STK103__01.jpg", // Replace with your image URL
-    description: "Get 30 % of on amazan ",
-    product: "Iphone 12pro",
+    image: "https://m.media-amazon.com/images/I/61-kTKQuDUL._AC_UY218_.jpg",
+    description: "Get 40% of on amazan ",
+    product: "Keyboard",
     coupen_staues: false,
     coupon_code: "xyz123",
     coin: 100,
   },
   {
     id: 5,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/i_nSCA8OBAxlCR8wqZJmx622VyE=/0x0:2040x1360/1400x1050/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/23935558/acastro_STK103__01.jpg", // Replace with your image URL
-    description: "Get 30 % of on amazan ",
-    product: "Iphone 12pro",
+    image: "https://m.media-amazon.com/images/I/61T1-tI9jdL._AC_UY218_.jpg", // Replace with your image URL
+    description: "Get 10% off on buy on amazan",
+
+    product: "boAt Immortal IM-700 7.1",
+    coupen_staues: false,
     coupon_code: "xyz123",
     coin: 100,
   },
   {
-    id: 6,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/i_nSCA8OBAxlCR8wqZJmx622VyE=/0x0:2040x1360/1400x1050/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/23935558/acastro_STK103__01.jpg", // Replace with your image URL
-    description: "Get 30 % of on amazan ",
-    product: "Iphone 12pro",
+    id: 4,
+    image: "https://m.media-amazon.com/images/I/61-kTKQuDUL._AC_UY218_.jpg",
+    description: "Get 40% of on amazan ",
+    product: "Keyboard",
     coupen_staues: false,
     coupon_code: "xyz123",
-    coin: 100,
+    coin: 300,
   },
   {
     id: 7,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/i_nSCA8OBAxlCR8wqZJmx622VyE=/0x0:2040x1360/1400x1050/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/23935558/acastro_STK103__01.jpg", // Replace with your image URL
-    description: "Get 30 % of on amazan ",
-    product: "Iphone 12pro",
+    image: "https://m.media-amazon.com/images/I/81fxjeu8fdL._AC_UY218_.jpg",
+    description: "Get 20% off on buy this product on amzazan    ",
+    product: "Apple iPhone 15 Pro Max",
     coupen_staues: false,
     coupon_code: "xyz123",
-    coin: 100,
+    coin: 1000,
   },
   {
     id: 8,
-    image:
-      "https://cdn.vox-cdn.com/thumbor/i_nSCA8OBAxlCR8wqZJmx622VyE=/0x0:2040x1360/1400x1050/filters:focal(1020x680:1021x681)/cdn.vox-cdn.com/uploads/chorus_asset/file/23935558/acastro_STK103__01.jpg", // Replace with your image URL
-    description: "Get 30 % of on amazan ",
-    product: "Iphone 12pro",
+    image: "https://m.media-amazon.com/images/I/61Zv+ufF51L._AC_UY218_.jpg", // Replace with your image URL
+    description: "Get 50% off on buy on Flipkart",
     coupen_staues: false,
+    product: "Logitech B170 Wireless Mouse",
     coupon_code: "xyz123",
-    coin: 100,
+    coin: 200,
   },
 
   // Add more product objects as needed...

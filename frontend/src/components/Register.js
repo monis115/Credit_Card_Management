@@ -138,9 +138,6 @@ const Register = () => {
         }
       } catch (error) {
         alert(error);
-        console.error("Error:", error);
-
-        // Handle network errors
       }
     }
   };

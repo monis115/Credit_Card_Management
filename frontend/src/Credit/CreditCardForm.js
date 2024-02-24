@@ -137,7 +137,7 @@ const CreditCardForm = () => {
       navigate("/p");
     } catch (error) {
       console.error("Error:", error);
-      alert("An error occurred while submitting user details.");
+      alert("Email alrady Exists or Another error occurred");
     }
   };
   return (
@@ -145,7 +145,7 @@ const CreditCardForm = () => {
       {state.loggedIn ? (
         <Wrapper>
           <form className="credit-card-form" onSubmit={handleSubmit}>
-            <h2>Enter Credit Card Information</h2>
+            <h2>Enter Your Information for new Card</h2>
             {/* Personal Information Section */}
             <div className="form-section">
               <h3>Personal Information</h3>
@@ -202,7 +202,7 @@ const CreditCardForm = () => {
               />
               <input
                 type="text"
-                name="Pancard"
+                name="Pancard number"
                 value={formData.Pancard}
                 placeholder="pancard"
                 onChange={handleChange}

@@ -2,9 +2,14 @@
 import Nav from "./components/Nav";
 import Home from "./Header/Home";
 import Footer from "./components/Footer";
-import Login from "./components/Login";
+//import Login from "./components/Login";
+import Register from "./auth/Register";
+import Login from "./auth/Login";
+import Change from "./auth/change";
+import Forget from "./auth/Forget";
+import ResetPasswordForm from "./auth/ResetPasswordForm";
 import { Routes, Route } from "react-router-dom";
-import Register from "./components/Register";
+//import Register from "./components/Register";
 import { UserProvider } from "./context/UserContext";
 import Logout from "./components/Logout";
 import CreditCardForm from "./Credit/CreditCardForm";
@@ -42,6 +47,14 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/score" element={<Score score={500} />} />
           <Route path="/*" element={<ErrorPage />} />
+          <Route
+            path="/reset-password/:resetToken"
+            element={<ResetPasswordForm />}
+          />
+          <Route path="/forget" element={<Forget />} />
+          {/* <Route path="/addadmin" element={<AdminLogin />} />
+        <Route path="/removeadmin" element={<RemoveAdmin />} /> */}
+          <Route path="/changepass" element={<Change />} />
         </Routes>
         <Footer />
       </UserDataProvider>

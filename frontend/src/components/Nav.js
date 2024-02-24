@@ -252,6 +252,27 @@ const Navb = styled.nav`
   }
 `;
 
+const generateRandomColor = () => {
+  const letters = "0123456789ABCDEF";
+  let color = "#";
+  for (let i = 0; i < 6; i++) {
+    color += letters[Math.floor(Math.random() * 16)];
+  }
+  return color;
+};
+
+export const generateColoredLetters = () => {
+  const text = "Zcredit";
+  const coloredLetters = text.split("").map((letter, index) => {
+    const color = generateRandomColor();
+    return (
+      <span key={index} style={{ color }}>
+        {letter}
+      </span>
+    );
+  });
+  return coloredLetters;
+};
 const Nav = () => {
   // const userData = useUserData();
   const { userData } = useUserData();
@@ -314,7 +335,7 @@ const Nav = () => {
     <Navb>
       <div className={`navbar ${isNavOpen ? "open" : ""}`}>
         <div className="logo-container">
-          <div className="logo">Banque!</div>
+          <div className="logo">Zcredit</div>
         </div>
         <div
           className="nav-toggle"
@@ -362,6 +383,12 @@ const Nav = () => {
                     <BsPersonWorkspace /> &nbsp;My Order
                   </NavLink> */}
                   <NavLink to="/logout">
+                    <FiLogOut /> &nbsp; New Card
+                  </NavLink>
+                  <NavLink to="/logout">
+                    <FiLogOut /> &nbsp;Existing Card
+                  </NavLink>
+                  <NavLink to="/logout">
                     <FiLogOut /> &nbsp;Logout
                   </NavLink>
                 </div>
@@ -382,7 +409,7 @@ const Nav = () => {
             <>
               {userData ? (
                 <>
-                  {userData.paymentDetails.length > 0 ? (
+                  {userData.paymentDetails.length > 0 || 1 ? (
                     userData.paymentDetails.map((payment, index) => (
                       <div key={index}>
                         {/* <p>{payment.coin}</p> */}

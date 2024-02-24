@@ -194,10 +194,11 @@ export const Card = () => {
                 <p>2150</p>
                 <p>8252</p>
                 <p>6420</p> */}
+                          <p>Zcredit</p>
                           <p className="card_number">{payment.cardNumber}</p>
                         </div>
                         <div class="row card-holder">
-                          <p>CARD HPLDER</p>
+                          <p>CARD Holder Name</p>
                           <p>VALID TILL</p>
                         </div>
                         <div class="row name">
